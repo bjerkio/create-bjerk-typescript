@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.1...v1.0.2) (2022-03-12)
+
+
+### Bug Fixes
+
+* upgrade @bjerk/eslint-config to v2 ([0590d88](https://github.com/bjerkio/create-bjerk-typescript/commit/0590d8831fe365873d94472b11f06a48829af092))
+
 ### [1.0.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.0...v1.0.1) (2022-03-12)
 
 
