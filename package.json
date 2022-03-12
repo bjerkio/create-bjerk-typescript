@@ -1,6 +1,6 @@
 {
   "name": "create-bjerk-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",

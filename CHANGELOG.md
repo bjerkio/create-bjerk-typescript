@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.2...v1.0.3) (2022-03-12)
+
+
+### Bug Fixes
+
+* remove .github folder ([51027c1](https://github.com/bjerkio/create-bjerk-typescript/commit/51027c13b708e131b440b9bacafbedfc7cd75582))
+
 ### [1.0.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.1...v1.0.2) (2022-03-12)
 
 
