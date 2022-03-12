@@ -1,0 +1,50 @@
+{
+  "name": "create-bjerk-typescript",
+  "version": "1.0.0",
+  "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
+  "main": "dist/main.js",
+  "repository": "github:bjerkio/create-bjerk-typescript",
+  "author": "Bjerk AS",
+  "keywords": [
+    "nodejs",
+    "nodejs-boilerplate",
+    "typescript",
+    "typescript-boilerplate",
+    "starter",
+    "boilerplate",
+    "scaffold",
+    "template"
+  ],
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "dev": "tsnd --respawn src/main.ts",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage src/**/*",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.1"
+  },
+  "prettier": "@cobraz/prettier",
+  "eslintConfig": {
+    "extends": "@bjerk/eslint-config"
+  },
+  "devDependencies": {
+    "@bjerk/eslint-config": "^1.0.0",
+    "@cobraz/prettier": "^2.0.0",
+    "@tsconfig/node16": "^1.0.2",
+    "@types/jest": "^27.4.1",
+    "@types/node": "16",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "packageManager": "yarn@3.1.1",
+  "volta": {
+    "node": "16.14.0",
+    "yarn": "1.22.17"
+  }
+}
