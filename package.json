@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
   "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "bin": {
+    "create-bjerk-typescript": "cmd/create-bjerk-typescript/index.js"
+  },
   "repository": "github:bjerkio/create-bjerk-typescript",
   "author": "Bjerk AS",
   "keywords": [
@@ -41,6 +45,9 @@
     "ts-jest": "^27.1.3",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "packageManager": "yarn@3.1.1",
   "volta": {
