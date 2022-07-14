@@ -106,7 +106,7 @@ App: ${app}
   const pkg = fsExt.readJsonSync(makepath(source, 'package.json'));
   const newPkg = {
     name: app,
-    exports: 'dist/main.js',
+    exports: './dist/main.js',
   };
 
   packageFieldsToKeep.forEach(field => {
