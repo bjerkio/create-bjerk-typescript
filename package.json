@@ -1,15 +1,8 @@
 {
   "name": "create-bjerk-typescript",
   "version": "1.0.2",
+  "private": false,
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
-  "type": "module",
-  "exports": "./dist/main.js",
-  "types": "./dist/main.d.ts",
-  "bin": {
-    "create-bjerk-typescript": "./cmd/create-bjerk-typescript/index.cjs"
-  },
-  "repository": "github:bjerkio/create-bjerk-typescript",
-  "author": "Bjerk AS",
   "keywords": [
     "nodejs",
     "nodejs-boilerplate",
@@ -20,20 +13,27 @@
     "scaffold",
     "template"
   ],
+  "repository": "github:bjerkio/create-bjerk-typescript",
   "license": "Apache-2.0",
-  "private": false,
-  "scripts": {
-    "dev": "tsnd --respawn src/main.ts",
-    "lint": "eslint . --ext .ts,.tsx",
-    "test": "jest --coverage src/**/*",
-    "build": "tsc"
+  "author": "Bjerk AS",
+  "type": "module",
+  "exports": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "bin": {
+    "create-bjerk-typescript": "./cmd/create-bjerk-typescript/index.cjs"
   },
-  "dependencies": {
-    "fs-extra": "^10.0.1"
+  "scripts": {
+    "build": "tsc",
+    "dev": "NODE_ENV=development dotenv-load nodemon src/main.ts",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage src/**/*"
   },
   "prettier": "@cobraz/prettier",
   "eslintConfig": {
     "extends": "@bjerk/eslint-config"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.1"
   },
   "devDependencies": {
     "@bjerk/eslint-config": "^2.0.1",
@@ -41,16 +41,18 @@
     "@tsconfig/node16-strictest-esm": "^1.0.3",
     "@types/jest": "^28.1.5",
     "@types/node": "18.0.4",
+    "dotenv-load": "^2.0.1",
     "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
     "prettier": "^2.5.1",
     "ts-jest": "^28.0.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   },
+  "packageManager": "yarn@3.1.1",
   "engines": {
     "node": ">=16"
   },
-  "packageManager": "yarn@3.1.1",
   "volta": {
     "node": "16.14.0",
     "yarn": "1.22.17"
