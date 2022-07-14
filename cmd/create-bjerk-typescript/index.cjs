@@ -63,6 +63,8 @@ const templates = [
 
 const packageFieldsToKeep = [
   'type',
+  'volta',
+  'engines',
   'prettier',
   'eslintConfig',
   'scripts',
