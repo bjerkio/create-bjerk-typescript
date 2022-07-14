@@ -45,12 +45,24 @@ const ignored = [
 const noDeps = ['fs-extra'];
 
 const templates = [
-  { file: '.github/workflow.yml', copyTo: '.github/workflows/workflow.yml' },
+  {
+    file: '.github/workflows/workflow.yml',
+    copyTo: '.github/workflows/workflow.yml',
+  },
+  {
+    file: '.github/workflows/pull-request.yml',
+    copyTo: '.github/workflows/pull-request.yml',
+  },
+  {
+    file: '.github/dependabot.yml',
+    copyTo: '.github/dependabot.yml',
+  },
   { file: 'README.md', copyTo: 'README.md' },
   { file: '.gitignore.root', copyTo: '.gitignore' },
 ];
 
 const packageFieldsToKeep = [
+  'type',
   'prettier',
   'eslintConfig',
   'scripts',
@@ -94,7 +106,7 @@ App: ${app}
   const pkg = fsExt.readJsonSync(makepath(source, 'package.json'));
   const newPkg = {
     name: app,
-    main: 'dist/main.js',
+    exports: 'dist/main.js',
   };
 
   packageFieldsToKeep.forEach(field => {
