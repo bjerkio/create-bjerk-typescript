@@ -23,3 +23,7 @@ updates:
       - 'github_actions'
       - 'dependencies'
       - 'templates/service'
+  - package-ecosystem: 'docker'
+    directory: '/'
+    schedule:
+      interval: 'daily'
