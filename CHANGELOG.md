@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.0.0...v2.0.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* revert to node:16-alpine3.16 ([9f0a0ec](https://github.com/bjerkio/create-bjerk-typescript/commit/9f0a0ec847a3ee49fa69343cc128ef0fc5dd0dd9))
+
 ## [2.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.3...v2.0.0) (2022-07-27)
 
 
