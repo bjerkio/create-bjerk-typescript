@@ -14,15 +14,6 @@ updates:
       - 'impact/no-changelog-required'
       - 'github_actions'
       - 'dependencies'
-  - package-ecosystem: 'github-actions'
-    directory: '/templates/.github'
-    schedule:
-      interval: 'daily'
-    labels:
-      - 'impact/no-changelog-required'
-      - 'github_actions'
-      - 'dependencies'
-      - 'templates/service'
   - package-ecosystem: 'docker'
     directory: '/'
     schedule:
