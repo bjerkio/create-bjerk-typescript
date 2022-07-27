@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.3...v2.0.0) (2022-07-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to ESM (#35)
+
+### Features
+
+* move to ESM ([#35](https://github.com/bjerkio/create-bjerk-typescript/issues/35)) ([4980550](https://github.com/bjerkio/create-bjerk-typescript/commit/4980550e4fcee5f709148e1d6699b768f1ff62f5))
+
 ### [1.0.3](https://github.com/bjerkio/create-bjerk-typescript/compare/v1.0.2...v1.0.3) (2022-03-12)
 
 
