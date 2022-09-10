@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.0.1...v2.1.0) (2022-09-10)
+
+
+### Features
+
+* upgrade to yarn 3.2.3 ([#59](https://github.com/bjerkio/create-bjerk-typescript/issues/59)) ([dc69663](https://github.com/bjerkio/create-bjerk-typescript/commit/dc69663697e5b5bcb83a6b4951626d4bef2668a7))
+
+
+### Bug Fixes
+
+* fix eslint issue ([da6696e](https://github.com/bjerkio/create-bjerk-typescript/commit/da6696e2a2f9819c40e8f9a921da3bded56d371c))
+
 ## [2.0.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.0.0...v2.0.1) (2022-07-27)
 
 
