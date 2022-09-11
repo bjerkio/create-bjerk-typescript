@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.0...v2.1.1) (2022-09-11)
+
+
+### Bug Fixes
+
+* workflow release issue ([dde7920](https://github.com/bjerkio/create-bjerk-typescript/commit/dde79207e5505017901f0f87de99cb291e0e91c5))
+
 ## [2.1.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.0.1...v2.1.0) (2022-09-10)
 
 
