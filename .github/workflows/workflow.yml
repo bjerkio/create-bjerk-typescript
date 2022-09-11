@@ -28,6 +28,6 @@ jobs:
           package-name: create-bjerk-typescript
 
       - if: ${{ steps.release.outputs.release_created }}
-        run: yarn publish
+        run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
