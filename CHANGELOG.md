@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.1...v2.1.2) (2022-09-11)
+
+
+### Bug Fixes
+
+* rename npm auth token variable name ([3bc514e](https://github.com/bjerkio/create-bjerk-typescript/commit/3bc514e26f93305e9706fed0bbdeb2e038ec5716))
+
 ## [2.1.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.0...v2.1.1) (2022-09-11)
 
 
