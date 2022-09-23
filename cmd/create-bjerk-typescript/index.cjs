@@ -70,7 +70,7 @@ const packageFieldsToKeep = [
   'scripts',
   'dependencies',
   'devDependencies',
-  'license'
+  'license',
 ];
 
 function main() {
