@@ -22,6 +22,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "NODE_ENV=development dotenv-load nodemon src/main.ts",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage src/**/*"
   },
