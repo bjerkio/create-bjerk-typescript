@@ -46,11 +46,11 @@ const noDeps = ['fs-extra'];
 
 const templates = [
   {
-    file: '.github/workflows/workflow.yml',
+    file: 'github/workflows/workflow.yml',
     copyTo: '.github/workflows/workflow.yml',
   },
   {
-    file: '.github/workflows/pull-request.yml',
+    file: 'github/workflows/pull-request.yml',
     copyTo: '.github/workflows/pull-request.yml',
   },
   {
