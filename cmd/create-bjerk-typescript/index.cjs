@@ -54,7 +54,7 @@ const templates = [
     copyTo: '.github/workflows/pull-request.yml',
   },
   {
-    file: '.github/dependabot.yml',
+    file: 'github/dependabot.yml',
     copyTo: '.github/dependabot.yml',
   },
   { file: 'README.md', copyTo: 'README.md' },
