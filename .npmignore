@@ -6,7 +6,6 @@
 .yarn/install-state.gz
 
 .github/
-!templates/.github
 
 dist/
 coverage/

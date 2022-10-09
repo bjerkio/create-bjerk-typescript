@@ -26,8 +26,5 @@ jobs:
         # Run prettier directly, to ensure CHANGELOG is not fixed.
         run: yarn prettier --check .
 
-      - name: Test
-        run: yarn test --passWithNoTests
-
       - name: Build
         run: yarn build
