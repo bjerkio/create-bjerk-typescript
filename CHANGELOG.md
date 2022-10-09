@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.4...v2.3.0) (2022-10-09)
+
+
+### Features
+
+* bump dependencies ([#94](https://github.com/bjerkio/create-bjerk-typescript/issues/94)) ([0a347fc](https://github.com/bjerkio/create-bjerk-typescript/commit/0a347fc411de4a2997c1f2da5d43a47dc3649ffa))
+* clean up a few loose ends ([c430449](https://github.com/bjerkio/create-bjerk-typescript/commit/c4304492cc396dd9e61116e08ab4361596576028))
+
 ## [2.2.4](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.3...v2.2.4) (2022-10-09)
 
 
