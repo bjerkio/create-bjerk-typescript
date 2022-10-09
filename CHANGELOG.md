@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.1...v2.2.2) (2022-10-09)
+
+
+### Bug Fixes
+
+* ignore CHANGELOG from prettier ([d6808ca](https://github.com/bjerkio/create-bjerk-typescript/commit/d6808caa82a168fe0477783f672241da771a108b))
+* make yarn install stickly immutable ([0b991ed](https://github.com/bjerkio/create-bjerk-typescript/commit/0b991edaaa323073428a59aeb0279d9d53535e14))
+
 ## [2.2.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.0...v2.2.1) (2022-10-09)
 
 
