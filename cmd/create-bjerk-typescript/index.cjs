@@ -58,6 +58,7 @@ const templates = [
     copyTo: '.github/dependabot.yml',
   },
   { file: 'README.md', copyTo: 'README.md' },
+  { file: '.yarnrc.yml', copyTo: '.yarnrc.yml' },
   { file: '.gitignore.root', copyTo: '.gitignore' },
 ];
 
