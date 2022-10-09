@@ -30,6 +30,8 @@ jobs:
 
       - run: yarn format
 
+      - run: cp .yarn/releases/* templates/yarn-releases
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:

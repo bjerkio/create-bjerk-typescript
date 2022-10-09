@@ -59,6 +59,7 @@ const templates = [
   },
   { file: 'README.md', copyTo: 'README.md' },
   { file: '.yarnrc.yml', copyTo: '.yarnrc.yml' },
+  { file: 'yarn-releases/*', copyTo: '.yarn/releases/' },
   { file: '.gitignore.root', copyTo: '.gitignore' },
 ];
 
