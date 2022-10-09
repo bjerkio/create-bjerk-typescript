@@ -28,7 +28,8 @@ jobs:
         env:
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
-      - run: yarn format
+      # Run prettier directly, to ensure CHANGELOG is not fixed.
+      - run: yarn prettier --write .
 
       - run: rm templates/yarn-releases/*
 
