@@ -22,7 +22,11 @@ jobs:
 
       - run: yarn set version latest
 
-      - run: cp .yarnrc.yml templates/
+      - run: rm templates/yarn-releases/*
+
+      - run: cp .yarnrc.yml templates/yarnrc.yml
+
+      - run: cp .yarn/releases/* templates/yarn-releases
 
       - run: yarn install
         env:
@@ -30,10 +34,6 @@ jobs:
 
       # Run prettier directly, to ensure CHANGELOG is not fixed.
       - run: yarn prettier --write .
-
-      - run: rm templates/yarn-releases/*
-
-      - run: cp .yarn/releases/* templates/yarn-releases
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
