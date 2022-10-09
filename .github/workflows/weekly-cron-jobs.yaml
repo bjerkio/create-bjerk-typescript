@@ -30,6 +30,8 @@ jobs:
 
       - run: yarn format
 
+      - run: rm templates/yarn-releases/*
+
       - run: cp .yarn/releases/* templates/yarn-releases
 
       - name: Create Pull Request
