@@ -1,0 +1,41 @@
+name: Weekly Cron Jobs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * MON' # Weekly on monday at 12
+
+jobs:
+  update-yarn:
+    name: Update yarn to latest
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+          cache: yarn
+
+      - run: yarn set version from sources
+
+      - run: cp .yarnrc.yml templates/
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: 'chore(deps): upgrade yarn to latest version'
+          author: Bjerk Bot <bjerk-bot@users.noreply.github.com>
+          token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
+          branch: update-yarn
+          team-reviewers: thebranches
+          delete-branch: true
+          title: 'chore(deps): upgrade yarn to latest version'
+          body: |
+            This pull request updates Yarn to latest version.
+
+            See the full changelog here:
+            https://github.com/yarnpkg/berry/blob/master/CHANGELOG.md
