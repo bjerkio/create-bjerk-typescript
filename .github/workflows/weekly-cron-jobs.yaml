@@ -25,6 +25,8 @@ jobs:
       - run: cp .yarnrc.yml templates/
 
       - run: yarn install
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
       - run: yarn format
 
