@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.4](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.3...v2.2.4) (2022-10-09)
+
+
+### Bug Fixes
+
+* yarnrc issue ([b176766](https://github.com/bjerkio/create-bjerk-typescript/commit/b176766b5786e11683291912d671ce84649b5cc3))
+
 ## [2.2.3](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.2...v2.2.3) (2022-10-09)
 
 
