@@ -2,15 +2,17 @@
 
 ## [2.2.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.2...v2.2.0) (2022-10-07)
 
-
 ### Features
 
-* add formatting to scripts and workflows ([#72](https://github.com/bjerkio/create-bjerk-typescript/issues/72)) ([e019517](https://github.com/bjerkio/create-bjerk-typescript/commit/e019517720cd2e569301615123628fdd4436e6ec))
-
+- add formatting to scripts and workflows
+  ([#72](https://github.com/bjerkio/create-bjerk-typescript/issues/72))
+  ([e019517](https://github.com/bjerkio/create-bjerk-typescript/commit/e019517720cd2e569301615123628fdd4436e6ec))
 
 ### Bug Fixes
 
-* no such file github workflow ([#85](https://github.com/bjerkio/create-bjerk-typescript/issues/85)) ([11d51b2](https://github.com/bjerkio/create-bjerk-typescript/commit/11d51b2a4a62773071838c95b067a5bfcb643b13))
+- no such file github workflow
+  ([#85](https://github.com/bjerkio/create-bjerk-typescript/issues/85))
+  ([11d51b2](https://github.com/bjerkio/create-bjerk-typescript/commit/11d51b2a4a62773071838c95b067a5bfcb643b13))
 
 ## [2.1.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.1...v2.1.2) (2022-09-11)
 
