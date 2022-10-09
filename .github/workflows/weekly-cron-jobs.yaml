@@ -20,7 +20,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: yarn
 
-      - run: yarn set version from sources
+      - run: yarn set version latest
 
       - run: cp .yarnrc.yml templates/
 
