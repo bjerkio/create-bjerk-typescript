@@ -40,6 +40,7 @@ const ignored = [
   'package.json',
   'package-lock.json',
   'yarn.lock',
+  '.prettierignore',
 ];
 
 const noDeps = ['fs-extra'];
