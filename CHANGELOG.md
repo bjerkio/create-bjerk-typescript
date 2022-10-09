@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.0...v2.3.1) (2022-10-09)
+
+
+### Bug Fixes
+
+* rename yarnrc to include it in package ([aeafce5](https://github.com/bjerkio/create-bjerk-typescript/commit/aeafce53bd6a6acb672307981a0efea7046604d7))
+
 ## [2.3.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.4...v2.3.0) (2022-10-09)
 
 

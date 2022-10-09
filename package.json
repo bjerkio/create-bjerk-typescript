@@ -1,6 +1,6 @@
 {
   "name": "create-bjerk-typescript",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
   "keywords": [
     "nodejs",
