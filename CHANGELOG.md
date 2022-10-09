@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.0...v2.2.1) (2022-10-09)
+
+
+### Bug Fixes
+
+* add yarn executable as template ([f287263](https://github.com/bjerkio/create-bjerk-typescript/commit/f2872635e5e5d9c432c37e078ef95134b660f262))
+* missing .yarnrc.yml in generated project ([bbf0190](https://github.com/bjerkio/create-bjerk-typescript/commit/bbf0190036029a0f936e377e1c15570338ac7e11))
+
 ## [2.2.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.1.2...v2.2.0) (2022-10-07)
 
 
