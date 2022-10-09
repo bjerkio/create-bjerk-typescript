@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.3](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.2...v2.2.3) (2022-10-09)
+
+
+### Bug Fixes
+
+* ignore prettierignore ([89a7e59](https://github.com/bjerkio/create-bjerk-typescript/commit/89a7e594983a4a6dc9e9c29bbd45be6564b0284c))
+
 ## [2.2.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.2.1...v2.2.2) (2022-10-09)
 
 
