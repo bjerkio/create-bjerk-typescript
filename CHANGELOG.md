@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.1...v2.3.2) (2022-10-10)
+
+
+### Bug Fixes
+
+* remove wildcard reference ([4343d3a](https://github.com/bjerkio/create-bjerk-typescript/commit/4343d3a7c52d413d937fed2df3aae440e467a810))
+
 ## [2.3.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.0...v2.3.1) (2022-10-09)
 
 
