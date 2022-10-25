@@ -942,17 +942,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node16-strictest-esm@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@tsconfig/node16-strictest-esm@npm:1.0.3"
-  checksum: cc5650a1752e29f1adf5c4ff0a60e4f948c34d5a1e489a4504f3125c8b9b6f915f94dcd06e0936211a349d067469380e25f6ab461a4c0fd4a3b71c7108378fd7
-  languageName: node
-  linkType: hard
-
 "@tsconfig/node16@npm:^1.0.2":
   version: 1.0.3
   resolution: "@tsconfig/node16@npm:1.0.3"
   checksum: 3a8b657dd047495b7ad23437d6afd20297ce90380ff0bdee93fc7d39a900dbd8d9e26e53ff6b465e7967ce2adf0b218782590ce9013285121e6a5928fbd6819f
+  languageName: node
+  linkType: hard
+
+"@tsconfig/node18-strictest-esm@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@tsconfig/node18-strictest-esm@npm:1.0.1"
+  checksum: 9da55e6959defe1115996e3360decbf70f83fae925967c418a5a387db52daa005f6b270b858bea42d74c134ff7155157c5cabbfecc9c783fd1129e354ec2f31c
   languageName: node
   linkType: hard
 
@@ -1062,10 +1062,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16":
-  version: 16.11.68
-  resolution: "@types/node@npm:16.11.68"
-  checksum: a35293b6b8867e10ab9e10b6cd5f0e4224a86256d5ef102581dcb9f79f35f255ad87443e8584ddf8dce1229ee28885c58187e41822cf8d1e82495e7897c47c3f
+"@types/node@npm:^18":
+  version: 18.11.5
+  resolution: "@types/node@npm:18.11.5"
+  checksum: ac54e9287dd4549ea3dc8aabc0cf7bfa04c52f02925d7fd68414789617ec770f034c8ae2e111e8bd00d446a46fcac42587b5a316a1303e2f6ea094854248c9ff
   languageName: node
   linkType: hard
 
@@ -1904,9 +1904,9 @@ __metadata:
   dependencies:
     "@bjerk/eslint-config": ^2.2.2
     "@cobraz/prettier": ^2.0.0
-    "@tsconfig/node16-strictest-esm": ^1.0.3
+    "@tsconfig/node18-strictest-esm": ^1.0.1
     "@types/jest": ^29.1.2
-    "@types/node": 16
+    "@types/node": ^18
     "@typescript-eslint/eslint-plugin": ^5.39.0
     "@typescript-eslint/parser": ^5.39.0
     dotenv-load: ^2.0.1

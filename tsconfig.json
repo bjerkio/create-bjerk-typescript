@@ -3,7 +3,7 @@
     "files": true,
     "esm": true
   },
-  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
   "compilerOptions": {
     "module": "node16",
     "moduleResolution": "node16",
