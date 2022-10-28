@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.4.0...v2.4.1) (2022-10-28)
+
+
+### Bug Fixes
+
+* release concurrency issues ([e957fc5](https://github.com/bjerkio/create-bjerk-typescript/commit/e957fc56294c1b66554b7931a5ad4650b1f4d5b8))
+
 ## [2.4.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.2...v2.4.0) (2022-10-27)
 
 
