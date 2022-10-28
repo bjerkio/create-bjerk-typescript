@@ -1,4 +1,4 @@
-# create-bjerk-typescript
+# Bjerk Typescript Boilerplate
 
 This repository contains a basic Typescript boilerplate, based on Bjerks typical
 setup.
