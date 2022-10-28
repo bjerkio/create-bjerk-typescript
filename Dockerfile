@@ -1,4 +1,4 @@
-FROM node:18-alpine3.16 as build
+FROM node:19-alpine3.16 as build
 
 WORKDIR /usr/src/app
 
@@ -12,7 +12,7 @@ COPY . .
 
 RUN yarn build
 
-FROM node:18-alpine3.16
+FROM node:19-alpine3.16
 
 WORKDIR /usr/src/app
 
