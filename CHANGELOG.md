@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.2...v2.4.0) (2022-10-27)
+
+
+### Features
+
+* bump to node18 LTS ([#114](https://github.com/bjerkio/create-bjerk-typescript/issues/114)) ([898e328](https://github.com/bjerkio/create-bjerk-typescript/commit/898e3282a1ba10c170327c928e201516cf8663db))
+
 ## [2.3.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.3.1...v2.3.2) (2022-10-10)
 
 
