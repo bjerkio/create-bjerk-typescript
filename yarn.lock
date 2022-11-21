@@ -431,11 +431,11 @@ __metadata:
   linkType: hard
 
 "@cobraz/prettier@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@cobraz/prettier@npm:2.0.0"
+  version: 2.0.1
+  resolution: "@cobraz/prettier@npm:2.0.1"
   peerDependencies:
     prettier: "*"
-  checksum: 1a0be4ea5c9127a9636a641dbf222dc20c5cd5352b961a3086282e15c50b76dacc10f6faec97d4d428417bb1bc7cab2b5de2c7e3bf1a49aaf77c2b3f0f5bbe60
+  checksum: c974d83d7d452f255435507fd79857ba889c1d8103b6fb2eadf10d330ffb158cade1412314cc3de32ccb04c7f0594048cf6c1fc655ca837f080b39edd5cd2390
   languageName: node
   linkType: hard
 
