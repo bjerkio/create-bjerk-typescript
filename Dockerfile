@@ -6,7 +6,7 @@ ARG NPM_TOKEN
 
 COPY package.json yarn.lock ./
 
-RUN yarn install
+RUN yarn install --immutable
 
 COPY . .
 
