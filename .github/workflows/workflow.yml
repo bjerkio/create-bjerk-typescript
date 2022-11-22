@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   build:
@@ -18,7 +19,18 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: yarn
 
-      - run: yarn install --immutable
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Format
+        # Run prettier directly, to ensure CHANGELOG is not fixed.
+        run: yarn prettier --check .
+
+      - name: Build
+        run: yarn build
 
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
@@ -43,5 +55,4 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          push: true
           tags: bjerkio/create-bjerk-typescript:test
