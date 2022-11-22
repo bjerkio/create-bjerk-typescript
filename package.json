@@ -29,13 +29,19 @@
   },
   "prettier": "@cobraz/prettier",
   "eslintConfig": {
-    "extends": "@bjerk/eslint-config"
+    "extends": [
+      "@bjerk/eslint-config",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+      "jest"
+    ]
   },
   "dependencies": {
     "fs-extra": "^10.1.0"
   },
   "devDependencies": {
-    "@bjerk/eslint-config": "^2.2.2",
+    "@bjerk/eslint-config": "^3.0.1",
     "@cobraz/prettier": "^2.0.0",
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/jest": "^29.1.2",
@@ -47,7 +53,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.1",
+    "eslint-plugin-jest": "^27.1.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-unicorn": "^44.0.2",
