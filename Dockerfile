@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 
 ARG NPM_TOKEN
 
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn ./.yarn
 
 RUN yarn install
 
