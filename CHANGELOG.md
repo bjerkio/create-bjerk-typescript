@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.4.1...v2.5.0) (2022-11-24)
+
+
+### Features
+
+* change to @tsconfig/node-lts-strictest-esm ([#131](https://github.com/bjerkio/create-bjerk-typescript/issues/131)) ([70a457c](https://github.com/bjerkio/create-bjerk-typescript/commit/70a457c9fcacb155ef2e503f42181e72d2a1a5b8))
+* yarn installs should be `--immutable` ([#141](https://github.com/bjerkio/create-bjerk-typescript/issues/141)) ([4112674](https://github.com/bjerkio/create-bjerk-typescript/commit/4112674a0127b4fd5bbe1db5c388743b4606eb06))
+
 ## [2.4.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.4.0...v2.4.1) (2022-10-28)
 
 
