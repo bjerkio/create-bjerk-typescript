@@ -57,3 +57,11 @@ jobs:
           context: ./
           file: ./Dockerfile
           tags: bjerkio/create-bjerk-typescript:test
+
+  test-pr-workflow:
+    name: Test PR Workflow
+    uses: ./templates/github/workflows/pull-request.yml
+
+  test-push-workflow:
+    name: Test Push Workflow
+    uses: ./templates/github/workflows/workflow.yml
