@@ -37,7 +37,7 @@ jobs:
 
       - name: Build 🔨
         run: yarn build
-  
+
   build-docker:
     name: Build Docker
     runs-on: ubuntu-latest
