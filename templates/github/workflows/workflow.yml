@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    name: Lint, format, test and build
     runs-on: ubuntu-latest
 
     steps:
@@ -38,12 +39,13 @@ jobs:
         run: yarn build
   
   build-docker:
+    name: Build Docker
     runs-on: ubuntu-latest
 
     env:
-      # Consider adding a Docker repository here, e.g. like this:
+      # Consider replacing Docker repository below, e.g. like this:
       # IMAGE_NAME: ${{ secrets.DOCKER_REPOSITORY }}/${{ inputs.name }}
-      IMAGE_NAME: ${{ github.event.repository.name }}
+      IMAGE_NAME: bjerkio/${{ github.event.repository.name }}
 
     steps:
       - name: Checkout 🛎️

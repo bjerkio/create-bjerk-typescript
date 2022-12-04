@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ${{ github.event.repository.name }}
+      IMAGE_NAME: bjerkio/${{ github.event.repository.name }}
 
     steps:
       - name: Checkout 🛎️
