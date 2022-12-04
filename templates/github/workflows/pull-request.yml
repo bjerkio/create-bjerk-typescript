@@ -6,26 +6,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Use Node LTS
+      - name: Use Node LTS ✨
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
           cache: yarn
 
-      - name: Install dependencies
+      - name: Installing dependencies 📦️
         run: yarn install --immutable
 
-      - name: Lint
+      - name: Lint 💅
         run: yarn lint
 
-      - name: Format
+      - name: Format 🔍
         run: yarn format:check
 
-      - name: Test
+      - name: Test 🧪
         run: yarn test --passWithNoTests
 
-      - name: Build
+      - name: Build 🔨
         run: yarn build
