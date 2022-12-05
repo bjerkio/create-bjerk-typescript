@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.6.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.5.0...v2.6.0) (2022-12-05)
+
+
+### Features
+
+* add emojis to workflows ([6f10361](https://github.com/bjerkio/create-bjerk-typescript/commit/6f103619cbfc3e70ad19e240ef377a96e4932461))
+* add workflow for docker ([#155](https://github.com/bjerkio/create-bjerk-typescript/issues/155)) ([4d3e90e](https://github.com/bjerkio/create-bjerk-typescript/commit/4d3e90e37ef78d933e02a5a4be0eebc2824e6573))
+
 ## [2.5.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.4.1...v2.5.0) (2022-11-24)
 
 
