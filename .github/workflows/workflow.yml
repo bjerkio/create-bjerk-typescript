@@ -43,6 +43,7 @@ jobs:
         run: yarn npm publish
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
   build-docker:
     runs-on: ubuntu-latest
 
