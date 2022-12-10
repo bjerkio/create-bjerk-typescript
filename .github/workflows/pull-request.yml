@@ -1,16 +1,8 @@
-name: Workflow
-
-on:
-  push:
-    branches:
-      - main
-      - '[0-9]+.x'
-    tags:
-      - '*'
+name: Build
+on: [pull_request]
 
 jobs:
   build:
-    name: Lint, format, test and build
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +15,7 @@ jobs:
           node-version: lts/*
           cache: yarn
 
-      - name: Install dependencies 📦️
+      - name: Installing dependencies 📦️
         run: yarn install --immutable
 
       - name: Lint 💅
@@ -69,7 +61,6 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          # push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           # cache-from: type=registry,ref=${{ env.IMAGE_NAME }}:latest
