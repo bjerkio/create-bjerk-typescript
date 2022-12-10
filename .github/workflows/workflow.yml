@@ -57,3 +57,5 @@ jobs:
           context: ./
           file: ./Dockerfile
           tags: bjerkio/create-bjerk-typescript:test
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
