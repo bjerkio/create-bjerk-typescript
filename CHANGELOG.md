@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.6.0...v2.7.0) (2022-12-14)
+
+
+### Features
+
+* optimize with multi-stage Dockerfile ([#163](https://github.com/bjerkio/create-bjerk-typescript/issues/163)) ([5c9fed4](https://github.com/bjerkio/create-bjerk-typescript/commit/5c9fed475fe9f28531ab29bc09a8ab0b59a16171))
+
 ## [2.6.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.5.0...v2.6.0) (2022-12-05)
 
 
