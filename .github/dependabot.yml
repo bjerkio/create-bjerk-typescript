@@ -15,7 +15,7 @@ updates:
       - 'github_actions'
       - 'dependencies'
   - package-ecosystem: 'github-actions'
-    directory: '/templates/.github'
+    directory: '/templates/github'
     schedule:
       interval: 'daily'
     labels:

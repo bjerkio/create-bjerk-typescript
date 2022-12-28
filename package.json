@@ -1,6 +1,6 @@
 {
   "name": "create-bjerk-typescript",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
   "keywords": [
     "nodejs",
@@ -64,7 +64,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   },
-  "packageManager": "yarn@3.3.0",
+  "packageManager": "yarn@3.3.1",
   "engines": {
     "node": ">=18"
   },
