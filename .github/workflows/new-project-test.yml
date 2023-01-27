@@ -36,5 +36,5 @@ jobs:
 
       - run: yarn format:check
         working-directory: new-project
-      
+
       - run: ls new-project
