@@ -40,7 +40,11 @@ const ignored = [
   'package.json',
   'package-lock.json',
   'yarn.lock',
-  '.prettierignore',
+
+  // TODO: Remove .prettierignore once we have a better solution
+  // Read more: https://github.com/prettier/prettier/issues/8048
+
+  // '.prettierignore',
 ];
 
 const noDeps = ['fs-extra'];

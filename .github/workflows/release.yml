@@ -1,0 +1,39 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          package-name: create-bjerk-typescript
+
+      - if: ${{ steps.release.outputs.release_created }}
+        name: Use Node LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+          cache: yarn
+
+      - if: ${{ steps.release.outputs.release_created }}
+        name: Install dependencies
+        run: yarn install --immutable
+
+      - if: ${{ steps.release.outputs.release_created }}
+        name: Build
+        run: yarn build
+
+      - if: ${{ steps.release.outputs.release_created }}
+        run: yarn npm publish
+        env:
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
