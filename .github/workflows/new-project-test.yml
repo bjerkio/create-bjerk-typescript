@@ -26,6 +26,8 @@ jobs:
 
       - run: yarn install
         working-directory: new-project
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
 
       - run: yarn test
         working-directory: new-project
