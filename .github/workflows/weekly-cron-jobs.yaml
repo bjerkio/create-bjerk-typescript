@@ -67,7 +67,7 @@ jobs:
           commit-message: 'chore(deps): update github actions workflows'
           author: Bjerk Bot <bjerk-bot@users.noreply.github.com>
           token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
-          branch: update-yarn
+          branch: update-workflows
           team-reviewers: thebranches
           delete-branch: true
           title: 'chore(deps): update github actions workflows'
