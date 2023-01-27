@@ -19,9 +19,6 @@ jobs:
     steps:
       - name: Use Node LTS ✨
         uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-          cache: yarn
 
       - run: yarn create bjerk-typescript new-project
 
