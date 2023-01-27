@@ -36,3 +36,11 @@ jobs:
         run: yarn npm publish
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+
+  test-new-release:
+    needs: release
+    if: ${{ needs.release.outputs.release_created }}
+    uses: ./.github/workflows/pulumi-workflow.yml

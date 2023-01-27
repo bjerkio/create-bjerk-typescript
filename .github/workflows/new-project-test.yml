@@ -2,8 +2,7 @@ name: Testing
 
 on:
   workflow_dispatch:
-  release:
-    types: [created]
+  workflow_call:
   push:
     branches:
       - main
