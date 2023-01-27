@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.7.0...v2.8.0) (2023-01-27)
+
+
+### Features
+
+* optimize workflows ([#164](https://github.com/bjerkio/create-bjerk-typescript/issues/164)) ([e1dc83d](https://github.com/bjerkio/create-bjerk-typescript/commit/e1dc83d22febdf034f25405bea26a107305a7ed1))
+
 ## [2.7.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.6.0...v2.7.0) (2022-12-14)
 
 
