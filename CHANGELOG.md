@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.8.0...v2.8.1) (2023-01-27)
+
+
+### Bug Fixes
+
+* release issues ([1129128](https://github.com/bjerkio/create-bjerk-typescript/commit/1129128a6deceda9cf42b9293a3c00f83c1e4ed6))
+
 ## [2.8.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.7.0...v2.8.0) (2023-01-27)
 
 
