@@ -1,0 +1,40 @@
+name: Testing
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+  push:
+    branches:
+      - main
+      - '[0-9]+.x'
+    tags:
+      - '*'
+
+jobs:
+  test-new-project:
+    name: Create a new project, install dependencies and run tests/build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Node LTS ✨
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: yarn
+
+      - run: yarn create bjerk-typescript new-project
+
+      - run: yarn install
+        working-directory: new-project
+
+      - run: yarn test
+        working-directory: new-project
+
+      - run: yarn build
+        working-directory: new-project
+
+      - run: yarn format:check
+        working-directory: new-project
+      
+      - run: ls new-project
