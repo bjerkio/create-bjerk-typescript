@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.10.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.9.0...v2.10.0) (2023-02-06)
+
+
+### Features
+
+* Update docker/build-push-action to v4 ([#206](https://github.com/bjerkio/create-bjerk-typescript/issues/206)) ([3c4b88a](https://github.com/bjerkio/create-bjerk-typescript/commit/3c4b88abe0a7109cb85234b0500266535456f32a))
+
+
+### Bug Fixes
+
+* yarn to 3.4.1 ([#207](https://github.com/bjerkio/create-bjerk-typescript/issues/207)) ([aef6152](https://github.com/bjerkio/create-bjerk-typescript/commit/aef61526e39761c96af8d90b6d3040e790253407))
+
 ## [2.9.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.8.1...v2.9.0) (2023-01-27)
 
 
