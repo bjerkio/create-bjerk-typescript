@@ -3,6 +3,7 @@ on: [pull_request]
 
 jobs:
   build:
+    name: Lint, format, test and build
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +31,8 @@ jobs:
       - name: Build 🔨
         run: yarn build
 
-  build-docker:
+  build-container:
+    name: Build container
     runs-on: ubuntu-latest
 
     env:
@@ -47,7 +49,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ env.IMAGE_NAME }}
-          flavor: latest=true
           tags: |
             type=ref,event=pr
 
@@ -62,5 +63,6 @@ jobs:
           file: ./Dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          # Uncomment to enable caching
           # cache-from: type=registry,ref=${{ env.IMAGE_NAME }}:latest
           cache-to: type=inline
