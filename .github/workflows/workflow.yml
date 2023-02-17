@@ -44,8 +44,11 @@ jobs:
 
     env:
       # Consider replacing Docker repository below, e.g. like this:
-      # IMAGE_NAME: ${{ secrets.DOCKER_REPOSITORY }}/${{ inputs.name }}
+      # IMAGE_NAME: ${{ secrets.CONTAINER_REPOSITORY }}/${{ inputs.name }}
       IMAGE_NAME: bjerkio/${{ github.event.repository.name }}
+      IS_DEFAULT_BRANCH:
+        ${{ github.ref == format('refs/heads/{0}',
+        github.event.repository.default_branch) }}
 
     steps:
       - name: Checkout 🛎️
@@ -58,7 +61,8 @@ jobs:
           images: ${{ env.IMAGE_NAME }}
           flavor: latest=true
           tags: |
-            type=sha,prefix={{branch}}-
+            type=raw,value=latest,enable=${{ env.IS_DEFAULT_BRANCH }}
+            type=sha,prefix={{branch}}-,priority=1001
 
       - name: Set up Docker Buildx 🔨
         id: buildx

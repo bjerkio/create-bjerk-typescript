@@ -35,7 +35,7 @@ jobs:
 
     env:
       # Consider replacing Docker repository below, e.g. like this:
-      # IMAGE_NAME: ${{ secrets.DOCKER_REPOSITORY }}/${{ inputs.name }}
+      # IMAGE_NAME: ${{ secrets.CONTAINER_REPOSITORY }}/${{ inputs.name }}
       IMAGE_NAME: bjerkio/${{ github.event.repository.name }}
 
     steps:
