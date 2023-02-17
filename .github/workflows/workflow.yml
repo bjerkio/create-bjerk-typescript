@@ -60,7 +60,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ env.IMAGE_NAME }}
-          flavor: latest=true
           # For better caching, images can be tagged with «latest» tag
           # when the branch is the default branch.
           tags: |
