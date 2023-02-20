@@ -104,7 +104,6 @@ dist
 .tern-port
 
 # Yarn v2
-
 .yarn/*
 !.yarn/cache
 !.yarn/patches
