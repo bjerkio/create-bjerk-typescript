@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.11.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.10.0...v2.11.0) (2023-02-20)
+
+
+### Features
+
+* workflow improvements ([#219](https://github.com/bjerkio/create-bjerk-typescript/issues/219)) ([c2b56d3](https://github.com/bjerkio/create-bjerk-typescript/commit/c2b56d345dfbd9f694304d38dbb2880744d1567c))
+
+
+### Bug Fixes
+
+* use transform for ts-jest ([#214](https://github.com/bjerkio/create-bjerk-typescript/issues/214)) ([5ab043a](https://github.com/bjerkio/create-bjerk-typescript/commit/5ab043aa8e0ded0312e8dcd6dc79104e538e8649))
+
 ## [2.10.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.9.0...v2.10.0) (2023-02-06)
 
 
