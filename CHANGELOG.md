@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.11.0...v2.12.0) (2023-02-21)
+
+
+### Features
+
+* add yarn v2 to gitignore template ([#221](https://github.com/bjerkio/create-bjerk-typescript/issues/221)) ([70cba3b](https://github.com/bjerkio/create-bjerk-typescript/commit/70cba3b28c1cbe0060994c8d3742ccab77f6a5ec))
+
 ## [2.11.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.10.0...v2.11.0) (2023-02-20)
 
 
