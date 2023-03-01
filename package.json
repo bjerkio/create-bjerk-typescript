@@ -35,6 +35,14 @@
     ],
     "plugins": [
       "jest"
+    ],
+    "overrides": [
+      {
+        "files": "jest.config.*",
+        "rules": {
+          "import/no-default-export": "off"
+        }
+      }
     ]
   },
   "dependencies": {
