@@ -32,4 +32,3 @@ jobs:
             either pull-request.yml or workflow.yml. We synchronize these files
             from the main .github directory to template directory to keep them
             up-to-date.
-
