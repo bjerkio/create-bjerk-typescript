@@ -409,23 +409,23 @@ __metadata:
   linkType: hard
 
 "@bjerk/eslint-config@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@bjerk/eslint-config@npm:3.0.1"
+  version: 3.1.0
+  resolution: "@bjerk/eslint-config@npm:3.1.0"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.43.0
-    "@typescript-eslint/parser": ^5.43.0
+    "@typescript-eslint/eslint-plugin": ^5.54.0
+    "@typescript-eslint/parser": ^5.54.0
     eslint: ^7.32.0 || ^8.2.0
-    eslint-config-prettier: ^8.5.0
+    eslint-config-prettier: ^8.6.0
     eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-import: ^2.26.0
+    eslint-plugin-import: ^2.27.5
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-promise: ^6.1.1
-    eslint-plugin-unicorn: ^44.0.2
-    prettier: ^2.7.1
+    eslint-plugin-unicorn: ^46.0.0
+    prettier: ^2.8.4
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: b583c8c4fb1f4ac5e0e4a03bac8f93ff7f97ecae9fef4b12471f77d0a7ca9f28ef889c989bc0aa27427aee4a135c8d7ccc726a74fc3e4df06baaecfd841baf5d
+  checksum: 75d5908f5f76295b040bca2a0fd5544fe097b818bf0ee16b01efe92c1b9c6de3565192439fd50bbed51ef133690a8719cd6407c27627c225408f5af2fee216e1
   languageName: node
   linkType: hard
 
