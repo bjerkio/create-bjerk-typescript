@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.12.0...v2.13.0) (2023-03-08)
+
+
+### Features
+
+* use jest with typescript ([#229](https://github.com/bjerkio/create-bjerk-typescript/issues/229)) ([2a8600d](https://github.com/bjerkio/create-bjerk-typescript/commit/2a8600ddcfb6f68547a8c447ce80450db758f42e))
+
 ## [2.12.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.11.0...v2.12.0) (2023-02-21)
 
 
