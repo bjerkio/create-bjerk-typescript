@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.13.0...v2.14.0) (2023-03-27)
+
+
+### Features
+
+* **deps:** upgrade yarn to 3.5.0 ([#246](https://github.com/bjerkio/create-bjerk-typescript/issues/246)) ([402a5b4](https://github.com/bjerkio/create-bjerk-typescript/commit/402a5b46eeb0196fb54c6c0609277cd41b0ef41e))
+
 ## [2.13.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.12.0...v2.13.0) (2023-03-08)
 
 
