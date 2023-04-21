@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.14.0...v3.0.0) (2023-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Bump @bjerk/eslint-config from 3.1.0 to 4.0.0 ([#269](https://github.com/bjerkio/create-bjerk-typescript/issues/269))
+
+### Features
+
+* Bump @bjerk/eslint-config from 3.1.0 to 4.0.0 ([#269](https://github.com/bjerkio/create-bjerk-typescript/issues/269)) ([a41e403](https://github.com/bjerkio/create-bjerk-typescript/commit/a41e403e33bb2d2d163f6bccf2959410dfe10047))
+
 ## [2.14.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.13.0...v2.14.0) (2023-03-27)
 
 
