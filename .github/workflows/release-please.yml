@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      - uses: google-github-actions/release-please-action@v3
+      - name: Analyse commits and prepare release 📦
+        uses: google-github-actions/release-please-action@v3
         id: release
         with:
           token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
