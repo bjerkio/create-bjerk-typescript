@@ -22,7 +22,9 @@
   "devDependencies": {
     "@bjerk/eslint-config": "^4.0.0",
     "@simenandre/prettier": "3.0.2",
-    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@tsconfig/esm": "^1.0.3",
+    "@tsconfig/node-lts": "^18.12.1",
+    "@tsconfig/strictest": "^2.0.1",
     "@types/jest": "^29.1.2",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -39,7 +41,7 @@
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3",
     "tsx": "^3.12.7",
-    "typescript": "^4.8.4"
+    "typescript": "^5.0.4"
   },
   "keywords": [
     "boilerplate",
