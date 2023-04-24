@@ -2,9 +2,8 @@
 /* eslint no-console: off */
 /* eslint @typescript-eslint/no-var-requires: off */
 /* eslint no-undef: off */
-
-const path = require('path');
-const fsExt = require('fs-extra');
+import path from 'path';
+import fsExt from 'fs-extra';
 
 const makepath = (...p) => path.join(...p);
 const ignoreContent =
@@ -80,67 +79,63 @@ const packageFieldsToKeep = [
   'license',
 ];
 
-function main() {
-  console.log('Bootstrapping');
+console.log('Bootstrapping');
 
-  const [, , app = 'my-app', dest = process.cwd()] = process.argv;
-  const source = makepath(__dirname, '../..');
-  const destination = makepath(dest.trim(), app.trim());
+const [, , app = 'my-app', dest = process.cwd()] = process.argv;
+const source = makepath(__dirname, '../..');
+const destination = makepath(dest.trim(), app.trim());
 
-  console.log(
-    `
+console.log(
+  `
 Summary:
 Destination: ${destination}
 App: ${app}
 `,
-  );
+);
 
-  console.log('Copying Project Files ...');
+console.log('Copying Project Files ...');
 
-  fsExt.copySync(source, destination, {
-    filter: ignoreContent(...ignored.map(x => makepath(source, x))),
-  });
+fsExt.copySync(source, destination, {
+  filter: ignoreContent(...ignored.map(x => makepath(source, x))),
+});
 
-  console.log('Copying Templates ...');
+console.log('Copying Templates ...');
 
-  templates.forEach(x =>
-    fsExt.copySync(
-      makepath(source, 'templates', x.file),
-      makepath(destination, x.copyTo),
-    ),
-  );
+templates.forEach(x =>
+  fsExt.copySync(
+    makepath(source, 'templates', x.file),
+    makepath(destination, x.copyTo),
+  ),
+);
 
-  console.log('Preparing package.json ...');
+console.log('Preparing package.json ...');
 
-  const pkg = fsExt.readJsonSync(makepath(source, 'package.json'));
-  const newPkg = {
-    name: app,
-    exports: './dist/main.js',
-  };
+const pkg = fsExt.readJsonSync(makepath(source, 'package.json'));
+const newPkg = {
+  name: app,
+  exports: './dist/main.js',
+};
 
-  packageFieldsToKeep.forEach(field => {
-    if (typeof pkg[field] !== 'undefined') {
-      newPkg[field] = pkg[field];
-    }
-  });
+packageFieldsToKeep.forEach(field => {
+  if (typeof pkg[field] !== 'undefined') {
+    newPkg[field] = pkg[field];
+  }
+});
 
-  noDeps.forEach(dep => {
-    if (pkg.dependencies[dep]) {
-      delete pkg.dependencies[dep];
-    }
+noDeps.forEach(dep => {
+  if (pkg.dependencies[dep]) {
+    delete pkg.dependencies[dep];
+  }
 
-    if (pkg.devDependencies[dep]) {
-      delete pkg.dependencies[dep];
-    }
-  });
+  if (pkg.devDependencies[dep]) {
+    delete pkg.dependencies[dep];
+  }
+});
 
-  fsExt.writeJsonSync(makepath(destination, 'package.json'), newPkg, {
-    spaces: 2,
-  });
+fsExt.writeJsonSync(makepath(destination, 'package.json'), newPkg, {
+  spaces: 2,
+});
 
-  console.log('\nDone!');
+console.log('\nDone!');
 
-  return Promise.resolve();
-}
-
-main().catch(console.error);
+return Promise.resolve();
