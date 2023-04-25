@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v3.0.0...v4.0.0) (2023-04-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to renovate ([#284](https://github.com/bjerkio/create-bjerk-typescript/issues/284))
+
+### Code Refactoring
+
+* move to renovate ([#284](https://github.com/bjerkio/create-bjerk-typescript/issues/284)) ([c2f8472](https://github.com/bjerkio/create-bjerk-typescript/commit/c2f84727520e7f13df47434d3095889c0d0b65d4))
+
 ## [3.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v2.14.0...v3.0.0) (2023-04-21)
 
 
