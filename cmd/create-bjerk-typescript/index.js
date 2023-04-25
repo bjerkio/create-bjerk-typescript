@@ -137,5 +137,3 @@ fsExt.writeJsonSync(makepath(destination, 'package.json'), newPkg, {
 });
 
 console.log('\nDone!');
-
-return Promise.resolve();
