@@ -18,7 +18,7 @@
   "type": "module",
   "exports": "./dist/main.js",
   "types": "./dist/main.d.ts",
-  "bin": "./cmd/create-bjerk-typescript/index.cjs",
+  "bin": "./cmd/create-bjerk-typescript/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "NODE_ENV=development dotenv-load nodemon src/main.ts",
