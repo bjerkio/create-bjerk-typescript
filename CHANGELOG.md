@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.0...v4.0.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* typo in bin reference ([17203e0](https://github.com/bjerkio/create-bjerk-typescript/commit/17203e015467a74737edce8fe012993a044f3908))
+
 ## [4.0.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v3.0.0...v4.0.0) (2023-04-25)
 
 
