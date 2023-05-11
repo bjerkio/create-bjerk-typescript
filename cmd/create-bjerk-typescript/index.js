@@ -3,9 +3,9 @@
 /* eslint @typescript-eslint/no-var-requires: off */
 /* eslint no-undef: off */
 import path from 'path';
+import * as url from 'url';
 import fsExt from 'fs-extra';
 
-const makepath = (...p) => path.join(...p);
 const ignoreContent =
   (...values) =>
   source =>
@@ -58,8 +58,8 @@ const templates = [
     copyTo: '.github/workflows/pull-request.yml',
   },
   {
-    file: 'github/dependabot.yml',
-    copyTo: '.github/dependabot.yml',
+    file: 'github/renovate.json',
+    copyTo: '.github/renovate.json',
   },
   { file: 'README.md', copyTo: 'README.md' },
   { file: 'yarnrc.yml', copyTo: '.yarnrc.yml' },
@@ -82,8 +82,8 @@ const packageFieldsToKeep = [
 console.log('Bootstrapping');
 
 const [, , app = 'my-app', dest = process.cwd()] = process.argv;
-const source = makepath(__dirname, '../..');
-const destination = makepath(dest.trim(), app.trim());
+const source = path.join(url.fileURLToPath(new URL('.', import.meta.url)), '../..');
+const destination = path.join(dest.trim(), app.trim());
 
 console.log(
   `
@@ -96,21 +96,21 @@ App: ${app}
 console.log('Copying Project Files ...');
 
 fsExt.copySync(source, destination, {
-  filter: ignoreContent(...ignored.map(x => makepath(source, x))),
+  filter: ignoreContent(...ignored.map(x => path.join(source, x))),
 });
 
 console.log('Copying Templates ...');
 
 templates.forEach(x =>
   fsExt.copySync(
-    makepath(source, 'templates', x.file),
-    makepath(destination, x.copyTo),
+    path.join(source, 'templates', x.file),
+    path.join(destination, x.copyTo),
   ),
 );
 
 console.log('Preparing package.json ...');
 
-const pkg = fsExt.readJsonSync(makepath(source, 'package.json'));
+const pkg = fsExt.readJsonSync(path.join(source, 'package.json'));
 const newPkg = {
   name: app,
   exports: './dist/main.js',
@@ -132,7 +132,7 @@ noDeps.forEach(dep => {
   }
 });
 
-fsExt.writeJsonSync(makepath(destination, 'package.json'), newPkg, {
+fsExt.writeJsonSync(path.join(destination, 'package.json'), newPkg, {
   spaces: 2,
 });
 
