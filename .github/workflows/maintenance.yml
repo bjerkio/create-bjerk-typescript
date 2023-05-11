@@ -29,11 +29,11 @@ jobs:
           body: |
             This pull request updates workflows from main .github directory.
 
-            Reason for this update is probably because Dependabot has updated
-            either pull-request.yml or workflow.yml. We synchronize these files
+            Reason for this update is probably because dependencies has been updated
+            in either pull-request.yml or workflow.yml. We synchronize these files
             from the main .github directory to template directory to keep them
             up-to-date.
-  
+
   copy-yarn:
     name: Copy yarn to templates
     runs-on: ubuntu-latest
