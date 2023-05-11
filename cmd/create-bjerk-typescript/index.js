@@ -82,7 +82,10 @@ const packageFieldsToKeep = [
 console.log('Bootstrapping');
 
 const [, , app = 'my-app', dest = process.cwd()] = process.argv;
-const source = path.join(url.fileURLToPath(new URL('.', import.meta.url)), '../..');
+const source = path.join(
+  url.fileURLToPath(new URL('.', import.meta.url)),
+  '../..',
+);
 const destination = path.join(dest.trim(), app.trim());
 
 console.log(

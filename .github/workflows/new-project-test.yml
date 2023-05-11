@@ -12,7 +12,8 @@ on:
 
 jobs:
   test-npm-new-project:
-    name: Create a new project with npm, install dependencies and run tests/build
+    name:
+      Create a new project with npm, install dependencies and run tests/build
     runs-on: ubuntu-latest
 
     steps:
@@ -43,7 +44,7 @@ jobs:
         working-directory: new-project
 
       - run: ls new-project
-  
+
   test-cmd:
     name: Test the CLI, create new project and run tests/build
     runs-on: ubuntu-latest
@@ -59,7 +60,8 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: node create-bjerk-typescript/cmd/create-bjerk-typescript new-project
+      - run:
+          node create-bjerk-typescript/cmd/create-bjerk-typescript new-project
 
       - run: yarn install
         working-directory: new-project
