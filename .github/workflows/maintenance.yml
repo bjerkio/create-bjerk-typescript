@@ -19,17 +19,45 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: 'chore(deps): update github actions workflows'
           author: Bjerk Bot <bjerk-bot@users.noreply.github.com>
           token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
           branch: update-workflows
           team-reviewers: thebranches
           delete-branch: true
-          title: 'chore(deps): update github actions workflows'
+          title: 'feat(deps): update github actions workflows'
+          commit-message: 'chore(deps): update github actions workflows'
           body: |
             This pull request updates workflows from main .github directory.
 
-            Reason for this update is probably because Dependabot has updated
-            either pull-request.yml or workflow.yml. We synchronize these files
+            Reason for this update is probably because dependencies has been updated
+            in either pull-request.yml or workflow.yml. We synchronize these files
             from the main .github directory to template directory to keep them
             up-to-date.
+
+  copy-yarn:
+    name: Copy yarn to templates
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: rm templates/yarn-releases/*
+      - run: cp .yarnrc.yml templates/yarnrc.yml
+      - run: cp .yarn/releases/* templates/yarn-releases
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          author: Bjerk Bot <bjerk-bot@users.noreply.github.com>
+          token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}
+          branch: update-workflows
+          team-reviewers: thebranches
+          delete-branch: true
+          title: 'feat(deps): update yarn template'
+          commit-message: 'chore(deps): update yarn template'
+          body: |
+            This pull request updates yarn to template directory.
+
+            Reason for this update is probably because yarn has been updated,
+            and we need to update the template in order to make it available in
+            the package.
