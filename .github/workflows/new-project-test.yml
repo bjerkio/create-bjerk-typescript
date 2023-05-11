@@ -59,6 +59,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
+          cache: yarn
+
+      - run: yarn install
+        working-directory: create-bjerk-typescript
 
       - run:
           node create-bjerk-typescript/cmd/create-bjerk-typescript new-project
