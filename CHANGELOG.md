@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.1...v4.0.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* reference to __dirname ([#294](https://github.com/bjerkio/create-bjerk-typescript/issues/294)) ([af86051](https://github.com/bjerkio/create-bjerk-typescript/commit/af86051c2aba7b8a24fbbee6102a4cc3796bb5ac))
+
 ## [4.0.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.0...v4.0.1) (2023-04-30)
 
 
