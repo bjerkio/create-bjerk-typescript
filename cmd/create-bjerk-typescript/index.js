@@ -2,9 +2,9 @@
 /* eslint no-console: off */
 /* eslint @typescript-eslint/no-var-requires: off */
 /* eslint no-undef: off */
+import fsExt from 'fs-extra';
 import path from 'path';
 import * as url from 'url';
-import fsExt from 'fs-extra';
 
 const ignoreContent =
   (...values) =>
