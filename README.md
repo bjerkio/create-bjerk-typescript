@@ -11,6 +11,8 @@ Check the [package.json] for more details.
 
 [package.json]:
   https://github.com/bjerkio/create-bjerk-typescript/blob/main/package.json
+  
+See our video about it here: https://www.youtube.com/watch?v=0x82COtqsag
 
 ## Features
 
