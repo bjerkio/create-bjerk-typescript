@@ -16,6 +16,9 @@ jobs:
       Create a new project with npm, install dependencies and run tests/build
     runs-on: ubuntu-latest
 
+    env:
+      YARN_ENABLE_IMMUTABLE_INSTALLS: 0
+
     steps:
       - name: Use Node LTS ✨
         uses: actions/setup-node@v3
@@ -26,13 +29,9 @@ jobs:
 
       - run: yarn install
         working-directory: new-project
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
 
       - run: yarn add fastify
         working-directory: new-project
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
 
       - run: yarn test
         working-directory: new-project
@@ -48,6 +47,9 @@ jobs:
   test-cmd:
     name: Test the CLI, create new project and run tests/build
     runs-on: ubuntu-latest
+
+    env:
+      YARN_ENABLE_IMMUTABLE_INSTALLS: 0
 
     steps:
       - name: Checkout 🛎️
@@ -66,15 +68,8 @@ jobs:
       - run:
           node create-bjerk-typescript/cmd/create-bjerk-typescript new-project
 
-      - run: yarn install
-        working-directory: new-project
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
-
       - run: yarn add fastify
         working-directory: new-project
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
 
       - run: yarn test
         working-directory: new-project

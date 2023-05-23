@@ -140,6 +140,10 @@ fsExt.writeJsonSync(path.join(destination, 'package.json'), newPkg, {
   spaces: 2,
 });
 
+console.log('Installing dependencies ...');
+
+execSync('yarn install', { cwd: destination, stdio: 'inherit' });
+
 console.log('Run prettier ...');
 
 execSync('yarn format', { cwd: destination, stdio: 'inherit' });
