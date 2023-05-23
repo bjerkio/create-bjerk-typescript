@@ -4,4 +4,4 @@ export async function main(): Promise<string> {
   return 'hello';
 }
 
-main();
+await main();
