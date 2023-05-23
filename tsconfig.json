@@ -3,7 +3,11 @@
     "files": true,
     "esm": true
   },
-  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+  "extends": [
+    "@tsconfig/strictest/tsconfig.json",
+    "@tsconfig/node-lts/tsconfig.json",
+    "@tsconfig/esm/tsconfig.json"
+  ],
   "compilerOptions": {
     "module": "node16",
     "moduleResolution": "node16",
