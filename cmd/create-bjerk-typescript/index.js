@@ -2,6 +2,7 @@
 /* eslint no-console: off */
 /* eslint @typescript-eslint/no-var-requires: off */
 /* eslint no-undef: off */
+import { execSync } from 'child_process';
 import fsExt from 'fs-extra';
 import path from 'path';
 import * as url from 'url';
@@ -138,5 +139,9 @@ noDeps.forEach(dep => {
 fsExt.writeJsonSync(path.join(destination, 'package.json'), newPkg, {
   spaces: 2,
 });
+
+console.log('Run prettier ...');
+
+execSync('yarn format', { cwd: destination, stdio: 'inherit' });
 
 console.log('\nDone!');
