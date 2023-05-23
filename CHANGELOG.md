@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.1.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.3...v4.1.0) (2023-05-23)
+
+
+### Features
+
+* change from ts-node to tsx ([#303](https://github.com/bjerkio/create-bjerk-typescript/issues/303)) ([6f0fcc8](https://github.com/bjerkio/create-bjerk-typescript/commit/6f0fcc8a2cab1a59ca73781111f6d01d15557ed2))
+* upgrade to typescript v5 ([#280](https://github.com/bjerkio/create-bjerk-typescript/issues/280)) ([23fc5a5](https://github.com/bjerkio/create-bjerk-typescript/commit/23fc5a56dca8cd0f4183f3b5439c80f3b0ba5964))
+
+
+### Bug Fixes
+
+* jest setup ([#304](https://github.com/bjerkio/create-bjerk-typescript/issues/304)) ([ce1d6c0](https://github.com/bjerkio/create-bjerk-typescript/commit/ce1d6c0e728024db3351d2f4f599e7704cae416b))
+
 ## [4.0.2](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.1...v4.0.2) (2023-05-11)
 
 
