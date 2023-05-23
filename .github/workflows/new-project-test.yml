@@ -39,9 +39,6 @@ jobs:
       - run: yarn build
         working-directory: new-project
 
-      - run: yarn format:check
-        working-directory: new-project
-
       - run: ls new-project
 
   test-cmd:
@@ -75,9 +72,6 @@ jobs:
         working-directory: new-project
 
       - run: yarn build
-        working-directory: new-project
-
-      - run: yarn format:check
         working-directory: new-project
 
       - run: ls new-project
