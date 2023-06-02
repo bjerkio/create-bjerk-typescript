@@ -74,7 +74,7 @@
     ]
   },
   "exports": "./dist/main.js",
-  "packageManager": "yarn@3.5.1",
+  "packageManager": "yarn@3.6.0",
   "prettier": "@simenandre/prettier",
   "volta": {
     "node": "18.16.0",
