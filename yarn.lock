@@ -1035,15 +1035,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@simenandre/prettier@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@simenandre/prettier@npm:3.0.2"
+"@simenandre/prettier@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@simenandre/prettier@npm:4.0.1"
   dependencies:
-    prettier-plugin-organize-imports: ^3.2.2
     prettier-plugin-package-perfection: ^1.1.0
   peerDependencies:
     prettier: ^2.8.8
-  checksum: 1aea6a011d32177e3bd499d48a8c5bf256679cd79b02613e79566379587da3ca60685a7da4d1e17ec14bf894ecbbca112ccfa0ae600c20f45be77a8deaca583a
+  checksum: 4e0c9bfdeea83bc417209eeb29c18592aa03912507d9b0e780e3dc45cbc0f8105811f717617606dccf5e4e0982ca3b373b936bf8eb58b0aed2e479f31e9b8474
   languageName: node
   linkType: hard
 
@@ -2009,7 +2008,7 @@ __metadata:
   resolution: "create-bjerk-typescript@workspace:."
   dependencies:
     "@bjerk/eslint-config": ^4.0.0
-    "@simenandre/prettier": 3.0.2
+    "@simenandre/prettier": 4.0.1
     "@tsconfig/esm": ^1.0.3
     "@tsconfig/node-lts": ^18.12.1
     "@tsconfig/strictest": ^2.0.1
@@ -4795,23 +4794,6 @@ __metadata:
   bin:
     prettier-package-json: bin/prettier-package-json
   checksum: 37e9e343e43943d6bfdd10bcab7daabfa4f4e70cac789991f749d82361581a8c30429f692b5bcaba3b55ceaafc41b1de51a2cdef24ecbc63ba4bac327f23cb0e
-  languageName: node
-  linkType: hard
-
-"prettier-plugin-organize-imports@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "prettier-plugin-organize-imports@npm:3.2.2"
-  peerDependencies:
-    "@volar/vue-language-plugin-pug": ^1.0.4
-    "@volar/vue-typescript": ^1.0.4
-    prettier: ">=2.0"
-    typescript: ">=2.9"
-  peerDependenciesMeta:
-    "@volar/vue-language-plugin-pug":
-      optional: true
-    "@volar/vue-typescript":
-      optional: true
-  checksum: 28620ea73a0a518c93200c7ea17d38a26132db3f55a75954983dff3422d4dd2155515518422b7a68935736aa333b0406a51778053bd30133a57718090272bb5d
   languageName: node
   linkType: hard
 
