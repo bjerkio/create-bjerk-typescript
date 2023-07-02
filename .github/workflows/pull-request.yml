@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # Consider replacing Docker repository below, e.g. like this:
+      # Consider replacing container repository below, e.g. like this:
       # IMAGE_NAME: ${{ secrets.CONTAINER_REPOSITORY }}/${{ inputs.name }}
       IMAGE_NAME: bjerkio/${{ github.event.repository.name }}
 
@@ -44,7 +44,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Docker meta 🏷
+      - name: Create metadata for container 🏷
         id: meta
         uses: docker/metadata-action@v4
         with:
@@ -52,15 +52,15 @@ jobs:
           tags: |
             type=ref,event=pr
 
-      - name: Set up Docker Buildx 🔨
+      - name: Use Docker Buildx 🔨
         id: buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Build Docker 🛠
+      - name: Build and push container 🛠
         uses: docker/build-push-action@v4
         with:
           context: ./
-          file: ./Dockerfile
+          file: ./Containerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           # Uncomment to enable caching
