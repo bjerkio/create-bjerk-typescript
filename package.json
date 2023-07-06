@@ -1,6 +1,6 @@
 {
   "name": "create-bjerk-typescript",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "Minimal typescript project template. Run yarn create bjerk-typescript <app name>",
   "license": "Apache-2.0",
   "author": "Bjerk AS",
