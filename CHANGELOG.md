@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.2.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.1.1...v4.2.0) (2023-07-06)
+
+
+### Features
+
+* **deps:** update dependency prettier to v3 ([#324](https://github.com/bjerkio/create-bjerk-typescript/issues/324)) ([05e5542](https://github.com/bjerkio/create-bjerk-typescript/commit/05e55421b7dbdc0ce332a373b25a0bbbe6409ffa))
+* **deps:** update yarn template ([#317](https://github.com/bjerkio/create-bjerk-typescript/issues/317)) ([3e0d757](https://github.com/bjerkio/create-bjerk-typescript/commit/3e0d757f08898ab11fa93baac515b7fe1e22b1d4))
+* **deps:** update yarn to v3.6.1 ([#316](https://github.com/bjerkio/create-bjerk-typescript/issues/316)) ([dda6a72](https://github.com/bjerkio/create-bjerk-typescript/commit/dda6a72a5ca1021ac83c2cfe3f11429d396069fe))
+
 ## [4.1.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.0.3...v4.1.0) (2023-05-23)
 
 
