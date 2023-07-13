@@ -1045,14 +1045,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@simenandre/prettier@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@simenandre/prettier@npm:4.1.0"
+"@simenandre/prettier@npm:4.1.1":
+  version: 4.1.1
+  resolution: "@simenandre/prettier@npm:4.1.1"
   dependencies:
     prettier-plugin-package-perfection: ^1.1.0
   peerDependencies:
-    prettier: ^3.0.0
-  checksum: 718fc5317dbcb0b10f72cab562442bad9c002af773d64581049794fabc726f2b9645b7a0172711934b04aa57e3327fcd1f0cce04da7302296f5670bbbd2987bc
+    prettier: ^2
+  checksum: 30f91db6f79d8f53fa769c169eb5ea3995a2996802d5fa00ea8ed9900dbf06308c0f243f4d75b71ad24fe523d666027cd9f18c59fc810a2a4060082d60cf0210
   languageName: node
   linkType: hard
 
@@ -2026,7 +2026,7 @@ __metadata:
   resolution: "create-bjerk-typescript@workspace:."
   dependencies:
     "@bjerk/eslint-config": ^4.0.0
-    "@simenandre/prettier": 4.1.0
+    "@simenandre/prettier": 4.1.1
     "@tsconfig/esm": ^1.0.3
     "@tsconfig/node-lts": ^18.12.1
     "@tsconfig/strictest": ^2.0.1
