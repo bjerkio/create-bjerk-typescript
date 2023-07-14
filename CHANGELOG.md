@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.2.0...v4.3.0) (2023-07-14)
+
+
+### Features
+
+* use eslintrc for eslint rules ([#329](https://github.com/bjerkio/create-bjerk-typescript/issues/329)) ([0aabb26](https://github.com/bjerkio/create-bjerk-typescript/commit/0aabb26448d034102c92383db9323dbcac9ace32))
+
 ## [4.2.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.1.1...v4.2.0) (2023-07-06)
 
 
