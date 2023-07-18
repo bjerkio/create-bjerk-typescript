@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.4.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.3.0...v4.4.0) (2023-07-18)
+
+
+### Features
+
+* add DS_Store to gitignore ([7df8033](https://github.com/bjerkio/create-bjerk-typescript/commit/7df8033fa744f9b97409adc2bca938612d4ee5e6))
+* add ignorePatterns and type to eslint config ([#341](https://github.com/bjerkio/create-bjerk-typescript/issues/341)) ([c4e971c](https://github.com/bjerkio/create-bjerk-typescript/commit/c4e971ca26298c0fa2b2861135b85f927015a262))
+* bump @bjerk/eslint-config to ^5.2.0 ([#340](https://github.com/bjerkio/create-bjerk-typescript/issues/340)) ([db29ca3](https://github.com/bjerkio/create-bjerk-typescript/commit/db29ca3f4f4452407fd49708a4155170c6d346d6))
+
 ## [4.3.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.2.0...v4.3.0) (2023-07-14)
 
 
