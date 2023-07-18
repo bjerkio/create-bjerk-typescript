@@ -1,6 +1,8 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: ['@bjerk/eslint-config', 'plugin:jest/recommended'],
   plugins: ['jest'],
+  ignorePatterns: ['dist', 'node_modules', 'coverage'],
   overrides: [
     {
       files: 'jest.config.*',
