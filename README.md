@@ -23,6 +23,8 @@ See our video about it here: https://www.youtube.com/watch?v=0x82COtqsag
 - Standardized on Node LTS
 - Kept (very) maintained
 
+[workflow]: templates/github
+
 ## Motivation
 
 There are thousands of boilerplates on GitHub, and being a company that both
