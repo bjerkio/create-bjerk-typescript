@@ -416,10 +416,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bjerk/eslint-config@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "@bjerk/eslint-config@npm:5.2.0"
+"@bjerk/eslint-config@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "@bjerk/eslint-config@npm:5.3.1"
   dependencies:
+    "@rushstack/eslint-patch": ^1.3.2
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
     eslint-config-prettier: ^8.8.0
@@ -428,7 +429,7 @@ __metadata:
     eslint-plugin-promise: ^6.1.1
     eslint-plugin-unicorn: ^48.0.0
   peerDependencies:
-    eslint: ^7.32.0 || ^8.2.0
+    eslint: ^8.45.0
     prettier: ^3.0.0
     typescript: ^5.1.6
   peerDependenciesMeta:
@@ -436,7 +437,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: fe1631810c98111d55cd9ce73618dba451957a81fb82d76052c0b6ae6b6f5a21eb3f548fc95401bfada1670daa0dcfd10cac590c09b6528850ec10ea411542f4
+  checksum: cfffa7ea7d4c9fa87f461a778f7a943680235c24a01cfe7286d193d59864694d26da5734f74d4364ef2769326bd46dbf1a54aaa24331bdd9d39ce148870f747f
   languageName: node
   linkType: hard
 
@@ -1044,6 +1045,13 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
+  languageName: node
+  linkType: hard
+
+"@rushstack/eslint-patch@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "@rushstack/eslint-patch@npm:1.3.2"
+  checksum: 010c87ef2d901faaaf70ea1bf86fd3e7b74f24e23205f836e9a32790bca2076afe5de58ded03c35cb482f83691c8d22b1a0c34291b075bfe81afd26cfa5d14cc
   languageName: node
   linkType: hard
 
@@ -2070,7 +2078,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-bjerk-typescript@workspace:."
   dependencies:
-    "@bjerk/eslint-config": ^5.2.0
+    "@bjerk/eslint-config": ^5.3.1
     "@simenandre/prettier": 5.0.0
     "@tsconfig/esm": ^1.0.3
     "@tsconfig/node-lts": ^18.12.1
