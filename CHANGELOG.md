@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.1](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.4.0...v4.4.1) (2023-07-24)
+
+
+### Bug Fixes
+
+* set @bjerk/eslint-config range to  ^5.3.1 ([8006720](https://github.com/bjerkio/create-bjerk-typescript/commit/800672088e05ea6e53ea5b64c6575581eeec28f8))
+
 ## [4.4.0](https://github.com/bjerkio/create-bjerk-typescript/compare/v4.3.0...v4.4.0) (2023-07-18)
 
 
