@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - run: cp .github/workflows/pull-request.yml templates/github/workflows/
       - run: cp .github/workflows/workflow.yml templates/github/workflows/
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - run: rm templates/yarn-releases/*
       - run: cp .yarnrc.yml templates/yarnrc.yml
