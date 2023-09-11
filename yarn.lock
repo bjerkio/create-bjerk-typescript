@@ -444,12 +444,12 @@ __metadata:
   linkType: hard
 
 "@esbuild-kit/core-utils@npm:^3.0.0, @esbuild-kit/core-utils@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@esbuild-kit/core-utils@npm:3.2.2"
+  version: 3.2.3
+  resolution: "@esbuild-kit/core-utils@npm:3.2.3"
   dependencies:
     esbuild: ~0.18.20
     source-map-support: ^0.5.21
-  checksum: c2822ff9953475ab55f4c0b2e84721c4ddfe835c5cd9f58adf74bfc2d3f71ea8414b661ddd590815d284330a436e966586916a0e41501e730d11877e5c07d2c8
+  checksum: cc2fea5c49108668b4649f3f3aac4690005fe82232f202abb6607e5d71eef5d19fc4afe15e359f441bc9484ac97c8e047988960e6e45d912d5cdf6080431a1c7
   languageName: node
   linkType: hard
 
