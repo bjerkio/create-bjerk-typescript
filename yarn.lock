@@ -415,21 +415,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bjerk/eslint-config@npm:^5.3.1":
-  version: 5.4.0
-  resolution: "@bjerk/eslint-config@npm:5.4.0"
+"@bjerk/eslint-config@npm:^6.0.0":
+  version: 6.0.1
+  resolution: "@bjerk/eslint-config@npm:6.0.1"
   dependencies:
     "@rushstack/eslint-patch": ^1.3.2
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
-    eslint-config-prettier: ^8.8.0
+    eslint-config-prettier: ^9.0.0
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-import: ^2.27.5
     eslint-plugin-promise: ^6.1.1
     eslint-plugin-unicorn: ^48.0.0
   peerDependencies:
     eslint: ^8.45.0
-  checksum: 62d6381fbf6d9217718f68c40a19dddadbbf72e4a7764790f5174edc1cef5aff745ff942d377f8f356b671431a75bc5a70c7d92edab9890cb71964c372ba646f
+  checksum: 354ae5dccf7870d0f428f85c6460523975b63e37391ce179199218a30e89a94c1b2b08f22516bd8e0b77845d9bdd6174ed6ac783bb44fba6bed5ffcf4d973427
   languageName: node
   linkType: hard
 
@@ -2006,7 +2006,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-bjerk-typescript@workspace:."
   dependencies:
-    "@bjerk/eslint-config": ^5.3.1
+    "@bjerk/eslint-config": ^6.0.0
     "@simenandre/prettier": 5.0.0
     "@tsconfig/esm": ^1.0.3
     "@tsconfig/node-lts": ^18.12.1
@@ -2414,14 +2414,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.8.0":
-  version: 8.10.0
-  resolution: "eslint-config-prettier@npm:8.10.0"
+"eslint-config-prettier@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "eslint-config-prettier@npm:9.0.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 153266badd477e49b0759816246b2132f1dbdb6c7f313ca60a9af5822fd1071c2bc5684a3720d78b725452bbac04bb130878b2513aea5e72b1b792de5a69fec8
+  checksum: 362e991b6cb343f79362bada2d97c202e5303e6865888918a7445c555fb75e4c078b01278e90be98aa98ae22f8597d8e93d48314bec6824f540f7efcab3ce451
   languageName: node
   linkType: hard
 
