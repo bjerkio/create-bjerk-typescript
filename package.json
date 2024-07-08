@@ -52,7 +52,7 @@
   "packageManager": "yarn@3.6.2",
   "prettier": "@simenandre/prettier",
   "volta": {
-    "node": "18.17.1",
+    "node": "18.20.4",
     "yarn": "1.22.19"
   }
 }
